@@ -1,0 +1,6 @@
+{
+  "name": "GlowSite — Sites Premium para Profissionais da Beleza",
+  "description": "Criação de sites premium, rápidos e estratégicos para profissionais da beleza na Espanha e Europa. Presença digital de luxo pronta em até 24h.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
