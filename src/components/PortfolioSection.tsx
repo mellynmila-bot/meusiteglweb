@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { Language, PortfolioItem } from '../types';
 import { INSTAGRAM_URL } from '../data/constants';
 import { Sparkles, ArrowRight, Instagram, Shield, X, Eye } from 'lucide-react';
+import portfolioSite1 from '../assets/images/portfolio_site_1.png';
+import portfolioSite2 from '../assets/images/portfolio_site_2.png';
+import portfolioSite3 from '../assets/images/portfolio_site_3.png';
+import portfolioSite4 from '../assets/images/portfolio_site_4.png';
 
 interface PortfolioSectionProps {
   currentLang: Language;
@@ -23,7 +27,7 @@ const realProjects: RealSiteProject[] = [
       pt: 'Clínica de Estética & Bem-Estar',
       es: 'Clínica de Estética y Bienestar',
     },
-    localImage: '/src/assets/images/portfolio_site_1.png',
+    localImage: portfolioSite1,
     fallbackImage: 'https://i.ibb.co/jK51VTC/screencapture-allurabeauty-ch-vercel-app-2026-10-02-15-29-56.png',
     description: {
       pt: 'Design refinado para estética facial e tratamentos corporais com agendamento direto.',
@@ -36,7 +40,7 @@ const realProjects: RealSiteProject[] = [
       pt: 'Harmonização & Estética Médica',
       es: 'Armonización y Estética Médica',
     },
-    localImage: '/src/assets/images/portfolio_site_2.png',
+    localImage: portfolioSite2,
     fallbackImage: 'https://i.ibb.co/M5h0SxsB/screencapture-rare-draluaneavila-vercel-app-2026-10-02-15-31-30.png',
     description: {
       pt: 'Presença digital de alta autoridade com foco em conversão e diferenciação médica.',
@@ -49,7 +53,7 @@ const realProjects: RealSiteProject[] = [
       pt: 'Atelier de Manicura Russa & Gel',
       es: 'Atelier de Manicura Rusa y Gel',
     },
-    localImage: '/src/assets/images/portfolio_site_3.png',
+    localImage: portfolioSite3,
     fallbackImage: 'https://i.ibb.co/sv9mSW9T/screencapture-lafrench-nail-vercel-app-2026-10-02-15-32-49.png',
     description: {
       pt: 'Galeria editorial, tabela de serviços e localização para captação de clientes locais.',
@@ -62,7 +66,7 @@ const realProjects: RealSiteProject[] = [
       pt: 'Nail Designer & Formadora',
       es: 'Nail Designer y Formadora',
     },
-    localImage: '/src/assets/images/portfolio_site_4.png',
+    localImage: portfolioSite4,
     fallbackImage: 'https://i.ibb.co/twJS8sfG/screencapture-elodienailsdesigner-vercel-app-2026-10-02-15-35-24.png',
     description: {
       pt: 'Apresentação luxuosa de nail art, cuidados e direcionamento direto para reservas.',

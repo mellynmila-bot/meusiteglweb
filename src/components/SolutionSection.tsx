@@ -3,6 +3,7 @@ import { Language } from '../types';
 import { translations } from '../data/translations';
 import { INSTAGRAM_URL } from '../data/constants';
 import { Sparkles, ArrowRight, Award, Compass, MousePointerClick } from 'lucide-react';
+import transformationImage from '../assets/images/transformation_brand_image.jpg';
 
 interface SolutionSectionProps {
   currentLang: Language;
@@ -36,9 +37,9 @@ export const SolutionSection: React.FC<SolutionSectionProps> = ({
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-3xl overflow-hidden border-2 border-[#B88928]/40 shadow-[0_20px_50px_rgba(90,60,10,0.15)] group bg-[#FAF1DF]">
               <img
-                src="/src/assets/images/transformation_brand_image.jpg"
+                src={transformationImage}
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://i.ibb.co/JFSYDQ5K/Recreate-logo-in-higher-quality-2-K-20260924122331.jpg';
+                  (e.target as HTMLImageElement).src = 'https://i.ibb.co/zHt3qJGr/Recreate-logo-in-higher-quality-2-K-20260924122331.jpg';
                 }}
                 alt="Apresente o seu negócio como uma marca de luxo"
                 referrerPolicy="no-referrer"

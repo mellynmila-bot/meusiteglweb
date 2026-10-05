@@ -3,6 +3,7 @@ import { Language } from '../types';
 import { translations } from '../data/translations';
 import { INSTAGRAM_URL } from '../data/constants';
 import { Sparkles, ArrowRight, CheckCircle2, Calendar } from 'lucide-react';
+import lashMockupImage from '../assets/images/mockup_lash_artist_portfolio_1790959451650.jpg';
 
 interface HeroProps {
   currentLang: Language;
@@ -144,7 +145,15 @@ export const Hero: React.FC<HeroProps> = ({
                 {/* Simulated Hero Banner inside Phone */}
                 <div className="relative h-44 overflow-hidden">
                   <img
-                    src="/src/assets/images/mockup_lash_artist_portfolio_1790959451650.jpg"
+                    src={lashMockupImage}
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      if (!target.src.includes('mockup_lash_artist_portfolio')) {
+                        target.src = '/images/mockup_lash_artist_portfolio_1790959451650.jpg';
+                      } else {
+                        target.src = 'https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=800&q=80';
+                      }
+                    }}
                     alt="Luxury Lash Studio Preview"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center filter brightness-95"

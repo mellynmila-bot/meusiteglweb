@@ -1,4 +1,8 @@
 import { PortfolioItem, Testimonial, FaqItem } from '../types';
+import lashMockup from '../assets/images/mockup_lash_artist_portfolio_1790959451650.jpg';
+import nailMockup from '../assets/images/mockup_nail_art_haute_1790959460771.jpg';
+import spaMockup from '../assets/images/mockup_spa_clinic_1790959474747.jpg';
+import heroAesthetic from '../assets/images/hero_luxury_beauty_aesthetic_1790959440584.jpg';
 
 export const portfolioItems: PortfolioItem[] = [
   {
@@ -11,7 +15,7 @@ export const portfolioItems: PortfolioItem[] = [
       es: 'Extensiones de Pestañas',
     },
     location: 'Madrid, Barrio de Salamanca',
-    imageUrl: '/src/assets/images/mockup_lash_artist_portfolio_1790959451650.jpg',
+    imageUrl: lashMockup,
     description: {
       pt: 'Página exclusiva para atelier de pestanas com catálogo de curvaturas, cuidados e direcionamento direto para reservas WhatsApp.',
       es: 'Web exclusiva para estudio de pestañas con catálogo de curvaturas, cuidados y enlace directo a citas por WhatsApp.',
@@ -36,7 +40,7 @@ export const portfolioItems: PortfolioItem[] = [
       es: 'Diseño de Uñas',
     },
     location: 'Lisboa, Avenida da Liberdade',
-    imageUrl: '/src/assets/images/mockup_nail_art_haute_1790959460771.jpg',
+    imageUrl: nailMockup,
     description: {
       pt: 'Apresentação refinada de manicura russa, blindagem em gel e nail art personalizada com galeria de alta definição.',
       es: 'Presentación refinada de manicura rusa, nivelación y nail art personalizado con galería en alta resolución.',
@@ -61,7 +65,7 @@ export const portfolioItems: PortfolioItem[] = [
       es: 'Estética Médica y Facial',
     },
     location: 'Barcelona, Eixample',
-    imageUrl: '/src/assets/images/mockup_spa_clinic_1790959474747.jpg',
+    imageUrl: spaMockup,
     description: {
       pt: 'Montra digital para clínica estética, tratamentos faciais e protocolos de rejuvenescimento com esclarecimento de etapas e contacto direto.',
       es: 'Escaparate digital para clínica estética, tratamientos faciales y protocolos antiedad con resolución de dudas y contacto directo.',
@@ -86,7 +90,7 @@ export const portfolioItems: PortfolioItem[] = [
       es: 'Diseño de Cejas y Mirada',
     },
     location: 'Porto, Foz do Douro',
-    imageUrl: '/src/assets/images/hero_luxury_beauty_aesthetic_1790959440584.jpg',
+    imageUrl: heroAesthetic,
     description: {
       pt: 'Página de prestígio para nanoblading, brow lamination e maquilhagem noiva com exibição impecável de antes/depois.',
       es: 'Página de prestigio para nanoblading, laminado de cejas y novias con exhibición impecable de antes y después.',
